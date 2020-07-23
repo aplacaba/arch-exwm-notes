@@ -18,8 +18,8 @@ iwctl help
 #+END_SRC
 
 *** Partitioning 
-I use parted for partitioning and setup the partition for GPT 
-set aside 1gb for /boot/ or /efi/
+I use parted for partitioning and setup the partition for GPT \\
+set aside 1gb for /boot/ or /efi/ \\
 the rest on /root/
 
 Format the partition and mount 
@@ -31,8 +31,8 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 mount /dev/sda1 /mnt/boot
 #+END_SRC
-**** Bootloader
-These are instructions for systemd-boot. 
+*** Bootloader
+These are instructions for systemd-boot. \\
 Should be chroot on /mnt before performing the following: 
 
 #+BEGIN_SRC bash
@@ -59,7 +59,7 @@ initrd  /initramfs-linux.img
 options root=PARTUUID=66e3f67d-f59a-4086-acdd-a6e248a3ee80 rw
 #+END_SRC
 
-Command to generate the PARTUUID
+Command to generate the PARTUUID:
 #+BEGIN_SRC bash
 blkid -s PARTUUID -o value /dev/sda2 
 #+END_SRC
