@@ -31,7 +31,7 @@ mkfs.ext4 /dev/sda2
 mount /dev/sda2 /mnt
 mount /dev/sda1 /mnt/boot
 #+END_SRC
-**** Bootloader
+*** Bootloader
 These are instructions for systemd-boot. 
 Should be chroot on /mnt before performing the following: 
 
@@ -65,7 +65,7 @@ blkid -s PARTUUID -o value /dev/sda2
 #+END_SRC
 ** Post Install
 *** Network setup
-*** Setup Alsa Mixer
+*** Audio Setup
 *** Setup XServer for EXWM
 **** Keyboard Configuration
 **** Avoid Screen tearing using picom
