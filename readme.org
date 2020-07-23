@@ -65,7 +65,7 @@ blkid -s PARTUUID -o value /dev/sda2
 #+END_SRC
 ** Post Install
 *** Network setup
-*** Setup Alsa Mixer
+*** Audio Setup
 *** Setup XServer for EXWM
 **** Keyboard Configuration
 **** Avoid Screen tearing using picom
