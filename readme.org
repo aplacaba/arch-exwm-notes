@@ -63,11 +63,34 @@ Command to generate the PARTUUID:
 #+BEGIN_SRC bash
 blkid -s PARTUUID -o value /dev/sda2 
 #+END_SRC
+*** Packages
 ** Post Install
 *** Network setup
+Install systemd-resolved
+#+BEGIN_SRC bash
+sudo pacman -S systemd-resolved
+systemctl enable systemd-resolved
+systemctrl start systemd-resolved
+#+END_SRC
+
+
+Update hostsfile
+#+BEGIN_SRC sh
+/etc/hosts
+127.0.0.1 localhost
+::1       localhost
+127.0.0.1 <hostname>.localdomain <hostname>
+#+END_SRC
+
+
 *** Audio Setup
-*** Setup XServer for EXWM
-**** Keyboard Configuration
-**** Avoid Screen tearing using picom
+*** XServer
+**** keyboard Configuration
+**** avoid Screen tearing using picom
+**** xinitrc
+*** EXWM
 *** Dotfiles
-*** Work Tools
+*** Programming
+**** Elixir
+**** Clojure
+**** Nodejs
