@@ -81,8 +81,6 @@ Update hostsfile
 ::1       localhost
 127.0.0.1 <hostname>.localdomain <hostname>
 #+END_SRC
-
-
 *** Audio Setup
 *** XServer
 **** keyboard Configuration
@@ -90,7 +88,14 @@ Update hostsfile
 **** xinitrc
 *** EXWM
 *** Dotfiles
-*** Programming
+*** Programming 
 **** Elixir
 **** Clojure
 **** Nodejs
+**** Ruby
+*** Language Servers
+**** Ruby (solargraph)
+**** Python (pyls)
+**** Clojure (clojure-lsp)
+**** Elixir (elixir-lsp)
+**** Javascript (javascript-typescript-langserver)
